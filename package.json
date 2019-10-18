@@ -1,0 +1,16 @@
+{
+  "name": "manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start ecosystem.yaml",
+    "logs": "pm2 logs",
+    "list": "pm2 l"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pm2": "^3.5.1"
+  }
+}

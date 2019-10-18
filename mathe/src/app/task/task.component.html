@@ -1,0 +1,13 @@
+
+<div>
+<mat-form-field>
+  <mat-label>Calculate: {{taskInfo.argument1}} {{taskInfo.action}} {{taskInfo.argument2}} = </mat-label>
+
+  <input [disabled]="solved" matInput placeholder="result" [(ngModel)]="result" (keyup.enter)="checkResult()">
+
+  <button mat-button *ngIf="result" matSuffix mat-icon-button (click)="checkResult()">
+      <mat-icon>{{status}}</mat-icon>
+  </button>
+
+</mat-form-field>
+</div>
